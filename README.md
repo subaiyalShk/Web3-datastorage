@@ -1,7 +1,7 @@
-IPFS Node
-This project is a simple IPFS node server using Helia and Express.
-taking the following docs are refernce: https://github.com/ipfs-examples/helia-examples/tree/main/examples/helia-ts-node
+***IPFS Node***
 
+This project is a simple IPFS node server using Helia and Express.
+taking the following docs as refernce: https://github.com/ipfs-examples/helia-examples/tree/main/examples/helia-ts-node
 
 Prerequisites
 Before you begin, ensure you have met the following requirements:
