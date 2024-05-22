@@ -1,0 +1,26 @@
+{
+  "name": "ipfs-node",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon --exec tsx index.ts",
+    "start": "cross-env NODE_OPTIONS=\"--loader=ts-node/esm\" node index.ts",
+    "test": "cross-env NODE_OPTIONS=\"--loader=ts-node/esm\" test-node-example test/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@helia/json": "^3.0.4",
+    "@helia/unixfs": "^3.0.6",
+    "express": "^4.19.2",
+    "helia": "^4.2.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "test-ipfs-example": "^1.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "type": "module"
+}
