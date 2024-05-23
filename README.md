@@ -1,57 +1,33 @@
-***IPFS Node***
+## IPFS Node
 
 This project is a simple IPFS node server using Helia and Express.
 taking the following docs as refernce: https://github.com/ipfs-examples/helia-examples/tree/main/examples/helia-ts-node
 
-Prerequisites
+**Prerequisites**
 Before you begin, ensure you have met the following requirements:
 
 - Install tsx -> https://www.npmjs.com/package/tsx
-- Node v20.1.0
+- Node - v20.1.0
+- NPM - v9.6.4
 
+**To use IPFS Node, follow these steps:**
+- Clone the repository
+- navigate to repository 
+- open terminal and run "npm start" 
 
-Clone the repository:
+**Start the development server:** `npm run start`
 
->
-Navigate to the project directory:
+**To test:**
+Send a post request - send a json object to be stored using below curl
 
-node
-Install the dependencies:
+    curl --location 'http://localhost:3000/upload' \--header 'ContentType: text/plain' \ --data '{"hello": "world"}
 
-install
-Using IPFS Node
-To use IPFS Node, follow these steps:
+Send a get request - send a CID and get back data associated to it
+`curl --location 'http://localhost:3000/read?cid=bagaaierasords4njcts6vs7qvdjfcvgnume4hqohf65zsfguprqphs3icwea`
 
-Start the development server:
-
-dev
-Or, start the production server:
-
-start
-The server will start running at http://localhost:3000.
-
-To test:
-
-Post request - send a json object to be stored using below curl
-'''
-curl --location 'http://localhost:3000/upload' \
---header 'Content-Type: text/plain' \
---data '{
-    "hello": "world"
-}
-'''
-
-Get Request - send a CID and get back data associated to it
-'''
-curl --location 'http://localhost:3000/read?cid=bagaaierasords4njcts6vs7qvdjfcvgnume4hqohf65zsfguprqphs3icwea'
-'''
-
-OR 
+**OR** 
 
 view in the browser via IPFS gateway https://ipfs.io/ipfs/{yourCID}
-
-
-
 
 
 Contact
