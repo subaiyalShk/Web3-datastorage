@@ -18,7 +18,7 @@ async function StartIPFSNode(){
 }
 
 async function main () {
-  StartIPFSNode()
+ await StartIPFSNode()
 
   app.post('/upload', async (req, res) => {
       const message = req.body;
