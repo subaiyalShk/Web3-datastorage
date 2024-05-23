@@ -19,11 +19,7 @@ async function StartIPFSNode(){
 
 async function main () {
   StartIPFSNode()
-  // const cid = await j.add({ hello: 'world' })
-  // const data = await j.get(cid);
-  // console.log(data);
 
-  // Upload data to IPFS
   app.post('/upload', async (req, res) => {
       const message = req.body;
       console.log(message);
