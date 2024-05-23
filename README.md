@@ -13,9 +13,7 @@ Before you begin, ensure you have met the following requirements:
 **To use IPFS Node, follow these steps:**
 - Clone the repository
 - navigate to repository 
-- open terminal and run "npm start" 
-
-**Start the development server:** `npm run start`
+- Start the development server: `npm run start`
 
 **To test:**
 Send a post request - send a json object to be stored using below curl
