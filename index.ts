@@ -38,7 +38,7 @@ async function main () {
           return res.status(400).json({ error: 'Missing cid parameter' });
         }
         cid = CID.parse(cid);
-        // The below line is not working and breaks the code; possibly due to scoping issue
+
         const data = await json(node).get(cid);
         if (!data) {
             return res.status(404).json({ error: 'Data not found' });
